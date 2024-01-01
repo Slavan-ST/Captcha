@@ -1,0 +1,89 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:controls="clr-namespace:Captcha"
+					>
+	<Design.PreviewWith>
+		<Border Padding="20">
+			<!-- Add Controls for Previewer Here -->
+		</Border>
+	</Design.PreviewWith>
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--This is the ControlTheme for our RatingControl-->
+	<ControlTheme x:Key="{x:Type controls:Captcha}" TargetType="controls:Captcha">
+
+		<ControlTheme.Resources>
+
+		</ControlTheme.Resources>
+
+		<!--Every TemplatedControl needs to have a ControlTemplate applied. In this setter we define it.-->
+		<Setter Property="Template">
+			<ControlTemplate>
+
+				<!--Мы помещаем наш контент в систему контроля ошибок проверки данных, 
+					поэтому сообщения об ошибках отображаются должным образом-->
+				<DataValidationErrors>
+
+					<!--Тут начинается наш контрол с названием "PART_StarsPresenter", по которому его можно будет найти-->
+					<ItemsControl x:Name="CaptchaPresenter" 
+								  MinWidth="1"
+								  MinHeight="1">
+
+
+						<Grid Margin="20"
+							VerticalAlignment="Stretch"
+							HorizontalAlignment="Stretch"
+							  MinHeight="1"
+							  MinWidth="1">
+
+							<Grid.RowDefinitions>
+								<RowDefinition Height="6*"/>
+								<RowDefinition/>
+								<RowDefinition/>
+							</Grid.RowDefinitions>
+							<UserControl Content="{TemplateBinding Image}"
+										 HorizontalAlignment="Stretch"
+										 VerticalAlignment="Stretch"
+										 Grid.Row="0"/>
+								<TextBox Text="{Binding $parent[controls:Captcha].InputUserText, Mode=TwoWay}"
+											 Grid.Row="1"/>
+								<Button Content="Refresh"
+											 HorizontalAlignment="Center"
+											 VerticalAlignment="Center"
+											 Command="{TemplateBinding Refresh}"
+											 Grid.Row="2"/>
+						</Grid>
+
+
+					</ItemsControl>
+				</DataValidationErrors>
+
+			</ControlTemplate>
+		</Setter>
+	</ControlTheme>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ResourceDictionary>
