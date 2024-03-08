@@ -11,6 +11,13 @@
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <Version>1.1</Version>
     <PackageProjectUrl>https://github.com/Slavan-ST/Captcha</PackageProjectUrl>
+    <Copyright>Copyright (c) 2023 Slavan-ST</Copyright>
+    <PackageIcon>Image.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Slavan-ST/Captcha</RepositoryUrl>
+    <PackageTags>Captcha; Avalonia; Капча; Аваланиа; C#; net 8</PackageTags>
+    <PackageReleaseNotes>Полностью рабочая и простая капча для avalonia &lt;= 11.0.9 на net 8
+
+пример есть в https://github.com/Slavan-ST/Captcha</PackageReleaseNotes>
   </PropertyGroup>
 
   
@@ -39,13 +46,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="LICENSE">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Update="Readme.md">
+    <None Update="Image.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
+
 </Project>
