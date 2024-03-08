@@ -41,7 +41,6 @@ namespace Captcha
             AffectsRender<Captcha>(WidthProperty, HeightProperty);
             Refresh = ReactiveCommand.Create(() =>
             {
-                Debug.WriteLine(InputUserText);
                 InitializeCaptcha();
             });
             InitializeCaptcha();
