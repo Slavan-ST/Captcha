@@ -18,14 +18,24 @@
     <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
 
+  
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.0.9" />
     <PackageReference Include="Avalonia.Skia" Version="11.0.9" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.9" />
     <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.9" />
     <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.9" />
-    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
-    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.9" />
   </ItemGroup>
 
   <ItemGroup>

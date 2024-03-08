@@ -2,15 +2,10 @@
 using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Data;
 using System.Windows.Input;
 using ReactiveUI;
-using System.Diagnostics;
 using Avalonia.Markup.Xaml.Styling;
 using Avalonia.Media;
 
