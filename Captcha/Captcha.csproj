@@ -14,7 +14,7 @@
     <Copyright>Copyright (c) 2023 Slavan-ST</Copyright>
     <PackageIcon>Image.png</PackageIcon>
     <RepositoryUrl>https://github.com/Slavan-ST/Captcha</RepositoryUrl>
-    <PackageTags>Captcha; Avalonia; Капча; Аваланиа; C#; net 8</PackageTags>
+    <PackageTags>Captcha; Avalonia; Капча; Авалониа; C#; net 8</PackageTags>
     <PackageReleaseNotes>Полностью рабочая и простая капча для avalonia &lt;= 11.0.9 на net 8
 
 пример есть в https://github.com/Slavan-ST/Captcha</PackageReleaseNotes>
