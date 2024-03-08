@@ -9,7 +9,7 @@
     <Description>Контрол для Avalonia, представляющий простую и интуитивно понятную капчу</Description>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
-    <Version>1.0.1</Version>
+    <Version>1.1</Version>
     <PackageProjectUrl>https://github.com/Slavan-ST/Captcha</PackageProjectUrl>
   </PropertyGroup>
 

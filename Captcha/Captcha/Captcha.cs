@@ -10,7 +10,6 @@ using Avalonia;
 using Avalonia.Data;
 using System.Windows.Input;
 using ReactiveUI;
-using Captcha.Models;
 using System.Diagnostics;
 using Avalonia.Markup.Xaml.Styling;
 using Avalonia.Media;
@@ -83,7 +82,7 @@ namespace Captcha
             set { SetValue(IsVerifiedProperty, value); }
         }
         /// <summary>
-        /// Картинка капчи, представленна гридом для лучшей масштабируемости
+        /// Картинка капчи, представленная гридом для лучшей масштабируемости
         /// </summary>
         public Grid? Image
         {

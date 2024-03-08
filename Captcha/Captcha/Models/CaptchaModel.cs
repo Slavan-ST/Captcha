@@ -12,9 +12,9 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace Captcha.Models
+namespace Captcha
 {
-    public class CaptchaModel:ReactiveObject
+    internal class CaptchaModel:ReactiveObject
     {
 
         public CaptchaModel(int length, double width, double height)
