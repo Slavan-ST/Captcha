@@ -16,6 +16,5 @@
 	public bool IsVerified
 	```
 	
-3. Sample: https://github.com/Slavan-ST/Captcha/tree/main/Captcha/Sample
 	
    
